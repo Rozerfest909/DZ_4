@@ -15,7 +15,10 @@ int ReadInt(string message)
 
 double Pow(double digit, double digit2)
 {
-    double result;
-    result = Math.Pow(digit,digit2);
+    double result = digit;
+    for (int i = 1; i < digit2; i++)
+    {
+        result *= digit;
+    }
     return result;
 }
